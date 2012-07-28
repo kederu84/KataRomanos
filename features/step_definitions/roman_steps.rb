@@ -27,7 +27,10 @@ class Conversor
 	        when 2  
 	        	 then "II"
 	        when 3  
-	        	 then "III"	        
+	        	 then "III"
+	       	when 4
+	        	 then "IV"
+	    	else  "Malaso"        
 	    end
 	end
 
