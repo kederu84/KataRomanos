@@ -26,7 +26,8 @@ class Conversor
 	    case numero  
 	        when 2  
 	        	 then "II"
-	        
+	        when 3  
+	        	 then "III"	        
 	    end
 	end
 
