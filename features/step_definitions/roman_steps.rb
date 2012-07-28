@@ -18,6 +18,16 @@ end
 class Conversor
 	def convertir_romano(numero)
 		return "I" if numero == 1 		
-  end
+		return dame_romano(numero)		
+    end
+
+
+    def dame_romano(numero)
+	    case numero  
+	        when 2  
+	        	 then "II"
+	        
+	    end
+	end
 
 end
