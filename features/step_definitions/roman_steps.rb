@@ -18,7 +18,7 @@ end
 class Conversor
 	def convertir_romano(numero)
 		return "I" if numero == 1 		
-		return dame_romano(numero)		
+		return dame_romano(numero)	if numero < 6	
     end
 
 
@@ -30,7 +30,7 @@ class Conversor
 	        	 then "III"
 	       	when 4
 	        	 then "IV"
-	    	else  "Malaso"        
+	    	else  "V"        
 	    end
 	end
 
