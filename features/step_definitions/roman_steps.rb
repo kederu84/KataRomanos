@@ -16,6 +16,7 @@ end
 
 
 class Conversor
+
 	def convertir_romano(numero)
 		return "I" if numero == 1 		
 		return dame_romano_2_5(numero)		if numero < 6	
@@ -36,6 +37,7 @@ class Conversor
 	    	else  "V"        
 	    end
 	end
+
 
 	def dame_romano_6_10(numero)
 		w = { 	6 => "VI", 
@@ -65,6 +67,7 @@ class Conversor
 		return num_romano
 	end
 
+
 	def dame_romano_16_20(numero)
 
 		if numero == 16 
@@ -86,6 +89,5 @@ class Conversor
 
 		return "XX"
 	end
-
 
 end
