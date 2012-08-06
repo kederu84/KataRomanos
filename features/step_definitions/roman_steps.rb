@@ -48,10 +48,11 @@ class Conversor
 
 	def dame_romano_11_15(numero)
 
-		num_romano = ""
-		count = 0
-		valores_num = [10, 9, 5, 4, 1 ]  
+		count = 0		
+		num_romano = ""		
 		simb = ["X", "IX", "V", "IV", "I"]
+		valores_num = [10, 9, 5, 4, 1 ]  
+
 		while numero > 0 do
 			if numero < valores_num[count]
 				count = count + 1
@@ -64,6 +65,7 @@ class Conversor
 	end
 
 	def dame_romano_16_20(numero)
+
 
 
 	end
