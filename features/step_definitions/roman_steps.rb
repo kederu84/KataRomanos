@@ -48,19 +48,24 @@ class Conversor
 
 	def dame_romano_11_15(numero)
 
-		romano = ""
-		contador = 0
-		valores = [10, 9, 5, 4, 1 ]  
-		simbolos = ["X", "IX", "V", "IV", "I"]
+		num_romano = ""
+		count = 0
+		valores_num = [10, 9, 5, 4, 1 ]  
+		simb = ["X", "IX", "V", "IV", "I"]
 		while numero > 0 do
-			if numero < valores[contador]
-				contador = contador + 1
+			if numero < valores_num[count]
+				count = count + 1
 			else
-				romano = romano + simbolos[contador]
-				numero = numero - valores[contador]
+				num_romano = num_romano + simb[count]
+				numero = numero - valores_num[count]
 			end
 		end
-		return romano
+		return num_romano
+	end
+
+	def dame_romano_16_20(numero)
+
+
 	end
 
 
