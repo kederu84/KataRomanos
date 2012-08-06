@@ -20,6 +20,7 @@ class Conversor
 		return "I" if numero == 1 		
 		return dame_romano_2_5(numero)	if numero < 6	
 		return dame_romano_6_10(numero)	if numero < 11	
+		return dame_romano_11_15(numero)	if numero < 16	
     end
 
 
@@ -43,5 +44,24 @@ class Conversor
 				10 => "X" }
 		return w.fetch( numero ) if w.has_key?( numero )
 	end 	
+
+
+	def dame_romano_11_15(numero)
+
+		romano = ""
+		contador = 0
+		valores = [10, 9, 5, 4, 1 ]  
+		simbolos = ["X", "IX", "V", "IV", "I"]
+		while numero > 0 do
+			if numero < valores[contador]
+				contador = contador + 1
+			else
+				romano = romano + simbolos[contador]
+				numero = numero - valores[contador]
+			end
+		end
+		return romano
+	end
+
 
 end
